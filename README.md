@@ -9,3 +9,7 @@ a conclusion about the health state of the SCOM environment against whose databa
 Close-SCOMOldAlerts.ps1 - This script closes all alerts that have an age defined with the $DayTresh variable and have the 
 Resolution-State "New". Rule alerts are normaly closed and monitor alerts are closed by resetting 
 the associated monitor.
+
+Set-SCOMMaintModeForClusters.ps1 - This script sets an SCOM agent into maintenance mode. If this agent is a member of a 
+cluster, the entire cluster is set to Maintenance Mode. If this node or another member of the cluster is already in maintenance
+mode, the MM window is either extended to the specified time or not adjusted if the cluster member is already in a longer MM window.
