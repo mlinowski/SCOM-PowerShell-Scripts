@@ -13,3 +13,5 @@ the associated monitor.
 Set-SCOMMaintModeForClusters.ps1 - This script sets an SCOM agent into maintenance mode. If this agent is a member of a 
 cluster, the entire cluster is set to Maintenance Mode. If this node or another member of the cluster is already in maintenance
 mode, the MM window is either extended to the specified time or not adjusted if the cluster member is already in a longer MM window.
+
+ Get-SCOMMPName.ps1 - This Script get the Managementpack-Name which the named Alert is included.
