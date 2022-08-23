@@ -100,7 +100,7 @@ if ($IsClusNode = Get-SCOMClassInstance -Class $clusterClass | Where-Object {$_.
     ######################################################################################################################
     foreach ($clsNode in $clsNodes)
     {
-        #$clsnode = "CPS-CLSNODE01.cpsad.campus.net"
+        
         $IsInMM = ((Get-SCOMClassInstance -Name $clsNode).InMaintenanceMode -and  $arrayData.Agent -contains $clsNode)
         if ($IsInMM[0] -eq $true) {
             write-host "$clsNode is in Maintenance-Mode"
