@@ -81,7 +81,7 @@ if ($AlertsCount -gt 0) {
                 }
                 else {
                     Write-Host " "
-                    Write-Host "There where Errors trying to reset monitor for the Alert -> $AlertName" -ForegroundColor Red
+                    Write-Host "There were Errors trying to reset monitor for the Alert -> $AlertName" -ForegroundColor Red
                 }
             }
         }
@@ -97,7 +97,7 @@ if ($AlertsCount -gt 0) {
             }
             else {
                     Write-Host " "
-                    Write-Host "There where Errors trying to close the Alert -> $AlertName" -ForegroundColor Red
+                    Write-Host "There were Errors trying to close the Alert -> $AlertName" -ForegroundColor Red
             }
         }
     }
